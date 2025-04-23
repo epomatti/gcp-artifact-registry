@@ -7,6 +7,10 @@ terraform {
   }
 }
 
-module "artifacts" {
-  source = "./modules/artifacts"
+module "apt_standard" {
+  source = "./modules/repositories/apt"
+}
+
+module "debian_buster_remote" {
+  source = "./modules/repositories/debian"
 }

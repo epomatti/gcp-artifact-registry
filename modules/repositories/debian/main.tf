@@ -1,5 +1,5 @@
-resource "google_artifact_registry_repository" "debian_remote" {
-  repository_id = "debian-buster"
+resource "google_artifact_registry_repository" "default" {
+  repository_id = "debian-buster-remote"
   description   = "Remote apt repository"
   format        = "APT"
   mode          = "REMOTE_REPOSITORY"
